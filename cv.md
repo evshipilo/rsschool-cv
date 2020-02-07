@@ -18,3 +18,6 @@
    }
    
    ```
+6. [Here  you can see my portfolio.](http://r29735qf.beget.tech/) 
+7. I was learning JAVA in online JAVA Rush courses. Now I am studying JS in Rolling Scopes School. 
+8. I am improving my English skills in offline courses and in *Duolingo* application.

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -9,53 +9,104 @@ body {
     grid-gap: 5px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-            " . header header  section1 "
-    "section2 section3 section3 section1 "
+            " section0 header header  section1 "
+    "section2 section2 section3 section3 "
     "section4 section5 section6  section6 "
     ". footer footer .";
 }
 .container>*{
-    background-color: cornsilk;
-    border-radius: 3%;
+    /*background-color: cornsilk;*/
+    border-radius: 10px;
+    border: 1px solid rgba(205, 214, 219, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 header {
     grid-area: header;
-
+    background-color: rgba(106, 158, 209, 0.15);
+}
+.section0 {
+    grid-area: section0;
+    background-color: rgba(209, 106, 106, 0.15);
 }
 
 .section1 {
     grid-area: section1;
+text-align: center;
+    background-color: rgba(209, 209, 106, 0.15);
+}
+.section1 img{
+    border-radius: 50%;
+    padding-top: 4px;
+    opacity: 0.6;
 
 }
-
 .section2 {
     grid-area: section2;
-
+    background-color: rgba(209, 106, 209, 0.15);
 }
 
 .section3 {
     grid-area: section3;
-
+    background-color: rgba(165, 14, 165, 0.15);
 }
 
 .section4 {
     grid-area: section4;
-
+    background-color: rgba(128, 75, 75, 0.15);
 }
 
 .section5 {
     grid-area: section5;
-
+    background-color: rgba(20, 20, 106, 0.15);
 }
 
 .section6 {
     grid-area: section6;
-
+    background-color: rgba(172, 100, 70, 0.15);
 }
 
 footer {
     grid-area: footer;
     background-color: cornsilk;
 }
+footer p{
+    display: inline-block;
 
+}
+footer div{
+    /*display: inline-block;*/
+    /*margin-left: 50%;*/
+    /*max-width: 60px;*/
+    float: right;
+
+}
+footer img{
+    margin-left: 5px;
+    margin-top: 17px;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 10px;
+}
+li img{
+   padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+
+    color: black;
+}
+a:hover{
+    color: red;
+    filter: blur(0.02rem);
+    transition: 0.5s;
+}
+p{
+    text-align: justify;
+}
 

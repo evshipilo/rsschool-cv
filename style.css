@@ -1,0 +1,14 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.container{
+    max-width: 1024px;
+    background-color: #f4f0ff;
+    /*border: burlywood solid 1px;*/
+    margin: auto;
+
+}
+.header-greed{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}

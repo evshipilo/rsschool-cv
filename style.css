@@ -1,14 +1,61 @@
-body{
+body {
     font-family: 'Nanum Gothic', sans-serif;
 }
-.container{
-    max-width: 1024px;
-    background-color: #f4f0ff;
-    /*border: burlywood solid 1px;*/
-    margin: auto;
 
-}
-.header-greed{
+.container {
+    max-width: 1024px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+            ". header header  section1"
+            "section2 section3 section4 section1"
+            "section5 section5 section6 section7 "
+            "footer footer footer footer";
 }
+
+header {
+    grid-area: header;
+    background-color: antiquewhite;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: burlywood;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: aqua;
+}
+
+.section3 {
+    grid-area: section3;
+    background-color: azure;
+}
+
+.section4 {
+    grid-area: section4;
+    background-color: beige;
+}
+
+.section5 {
+    grid-area: section5;
+    background-color: blanchedalmond;
+}
+
+.section6 {
+    grid-area: section6;
+    background-color: bisque;
+}
+
+.section7 {
+    grid-area: section7;
+    background-color: cyan;
+}
+ footer{
+     grid-area: footer;
+     background-color: cornsilk;
+ }
+
+

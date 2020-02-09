@@ -7,55 +7,55 @@ body {
     margin: auto;
     display: grid;
     grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-            ". header header  section1"
-            "section2 section3 section4 section1"
-            "section5 section5 section6 section7 "
-            "footer footer footer footer";
+            " . header header  section1 "
+    "section2 section3 section3 section1 "
+    "section4 section5 section6  section6 "
+    ". footer footer .";
 }
-
+.container>*{
+    background-color: cornsilk;
+    border-radius: 3%;
+}
 header {
     grid-area: header;
-    background-color: antiquewhite;
+
 }
 
 .section1 {
     grid-area: section1;
-    background-color: burlywood;
+
 }
 
 .section2 {
     grid-area: section2;
-    background-color: aqua;
+
 }
 
 .section3 {
     grid-area: section3;
-    background-color: azure;
+
 }
 
 .section4 {
     grid-area: section4;
-    background-color: beige;
+
 }
 
 .section5 {
     grid-area: section5;
-    background-color: blanchedalmond;
+
 }
 
 .section6 {
     grid-area: section6;
-    background-color: bisque;
+
 }
 
-.section7 {
-    grid-area: section7;
-    background-color: cyan;
+footer {
+    grid-area: footer;
+    background-color: cornsilk;
 }
- footer{
-     grid-area: footer;
-     background-color: cornsilk;
- }
 
 
